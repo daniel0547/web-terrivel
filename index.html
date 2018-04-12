@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html>
+<head>
+  <title>Formulario Terrivel</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+	<main>
+	<form method="GET" action="http://terrivel.herokuapp.com/monster">
+		<div>
+		<h1> Formulario GET</h1>
+		<label>Nome do monstro: <input name="nome" type="text"></label>
+		<label>Numero de pedras: <input name="num_pedras" type="number"></label>
+		<label>Tamanho das pedras: <input name="tam_pedras" type="number" step="0.5" default="3" max="7" value="3"></label>
+		<label>Cor do céu 1: <input name="corCeu1" type="color"></label>
+		<label>Cor do céu 2: <input name="corCeu2" type="color"></label>
+		<label>Tipo das pedras: 
+		<select name="tipo_pedras">
+		  <option disabled selected value>Selecione</option>
+		  <option value="marroada">Marroada</option>
+		  <option value="ametista">Ametista</option>
+		  <option value="topazio">Topazio</option>
+		  <option value="espinela">Espinela</option>
+		</select>
+		</label>
+		<label>
+		<input name="tipo_pedras_sortidas" type="checkbox" value="sim">Pedras sortidas
+		</label>
+		<center><button>Enviar a superficie</button></center>
+		</div>
+	</form>
+	<form method="POST" action="http://terrivel.herokuapp.com/monster">
+		<div>
+		<h1> Formulario POST</h1>
+		<label>Nome do monstro: <input name="nome" type="text"></label>
+		<label>Numero de pedras: <input name="num_pedras" type="number"></label>
+		<label>Tamanho das pedras: <input name="tam_pedras" type="number" step="0.5" default="3" max="7" value="3"></label>
+		<label>Cor do céu 1: <input name="corCeu1" type="color"></label>
+		<label>Cor do céu 2: <input name="corCeu2" type="color"></label>
+		<label>Tipo das pedras: 
+		<select name="tipo_pedras">
+		  <option disabled selected value>Selecione</option>
+		  <option value="marroada">Marroada</option>
+		  <option value="ametista">Ametista</option>
+		  <option value="topazio">Topazio</option>
+		  <option value="espinela">Espinela</option>
+		</select>
+		</label>
+		<label>
+		<input name="tipo_pedras_sortidas" type="checkbox" value="sim">Pedras sortidas
+		</label>
+		<center><button>Enviar a superficie</button></center>
+		</div>
+	</form>
+	</main>
+</body>
+</html>
